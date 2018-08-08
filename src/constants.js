@@ -1,1 +1,1 @@
-export const ROOT = "http://manchester.cs.ou.edu:32145";
+export const ROOT = "http://35.193.38.177:8000";
