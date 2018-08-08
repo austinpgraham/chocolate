@@ -30,7 +30,7 @@ class LoginForm extends Component {
         axios.post(URL, user).then(response =>
             window.location.assign('/dashboard/' + this.state.username)
         ).catch(error =>
-            this.setState({errorText: typeof error === "undefined" ? "Cannot contact server." : error.response.data["message"], is_loading: false})
+            this.setState({errorText: typeof error.response === "undefined" ? "Cannot contact server." : error.response.data["message"], is_loading: false})
         )
     }
 
